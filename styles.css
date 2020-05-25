@@ -1,0 +1,46 @@
+body {
+  display: grid;
+
+  grid-template-columns: 1fr 1200px 1fr;
+  grid-template-rows: 80px 400px 500px 600px;
+}
+
+div {
+  background-color: grey;
+}
+
+.header {
+  background-color: #ec6346;
+  grid-column: 1 / span 2;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: poppins, sans-serif;
+  font-weight: medium;
+  color: white;
+}
+
+.masthead {
+  background-color: lightsalmon;
+  grid-column: 1 / span 2;
+}
+
+.side-bar {
+  background-color: white;
+  grid-column: 1 / span 1;
+  grid-row: 3;
+}
+
+.main {
+  background-color: lightgrey;
+  grid-column: 2 / span 1;
+}
+
+.two {
+  background-color: red;
+  grid-column: 1 / span 2;
+}
